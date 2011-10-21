@@ -1,0 +1,16 @@
+{
+  "name": "DoubanBook2Library",
+  "version": "1.0",
+  "description": "Show library status of douban books",
+  "content_scripts": [{
+      "matches": ["http://book.douban.com/*"],
+      "js": ["js/jquery.js", "js/db2lb.js"]
+  }],
+  "permissions" : [
+    "tabs", "http://202.120.227.11/*"
+  ],
+  "icons" : {
+    "48" : "icon-48.png",
+    "128" : "icon-128.png"
+  }
+}
